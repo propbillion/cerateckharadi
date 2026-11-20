@@ -1,11 +1,11 @@
 // Google Ads Conversion Tracking - Codename Greater Kharadi (WhatsApp + Call)
-// TODO before launch: replace GK_WHATSAPP_LABEL / GK_CALL_LABEL with the new conversion labels from Google Ads
+// Ceratec (GK) conversions: WhatsApp = TSKiCPrInrwdENz43JxF, Call = fDhBCP3InrwdENz43JxF
 document.addEventListener('click', function (e) {
   if (typeof gtag !== 'function') return;
   if (e.target.closest('a[href*="wa.me"]')) {
-    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/GK_WHATSAPP_LABEL' });
+    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' });
   } else if (e.target.closest('a[href^="tel:"]')) {
-    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/GK_CALL_LABEL' });
+    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/fDhBCP3InrwdENz43JxF' });
   }
 });/* ============================================
    CODENAME GREATER KHARADI - Production JS
@@ -123,7 +123,7 @@ document.addEventListener('click', function (e) {
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
-      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/GK_WHATSAPP_LABEL' }); }
+      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' }); }
       window.open('https://wa.me/918055709079?text=' + message, '_blank');
 
       const btn = form.querySelector('button[type="submit"]');
@@ -175,7 +175,7 @@ document.addEventListener('click', function (e) {
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
-      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/GK_WHATSAPP_LABEL' }); }
+      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' }); }
       window.open('https://wa.me/918055709079?text=' + message, '_blank');
 
       const btn = heroForm.querySelector('button[type="submit"]');
